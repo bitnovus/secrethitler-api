@@ -33,7 +33,7 @@ import java.util.stream.Collectors;
  */
 @RestController
 @RequestMapping("/round")
-@CrossOrigin(allowCredentials = "true")
+@CrossOrigin(allowCredentials = "true", origins = "localhost")
 public class RoundController {
 
 	private final GameService gameService;

@@ -30,7 +30,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/player")
-@CrossOrigin(allowCredentials = "true")
+@CrossOrigin(allowCredentials = "true", origins = "localhost")
 public class PlayerController {
 
 	private final GameService gameService;

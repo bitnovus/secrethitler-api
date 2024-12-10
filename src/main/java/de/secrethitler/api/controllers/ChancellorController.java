@@ -41,7 +41,7 @@ import java.util.concurrent.ExecutionException;
  */
 @RestController
 @RequestMapping("/chancellor")
-@CrossOrigin(allowCredentials = "true")
+@CrossOrigin(allowCredentials = "true", origins = "localhost")
 public class ChancellorController {
 
 	private final GameService gameService;

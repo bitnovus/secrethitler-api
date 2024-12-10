@@ -37,7 +37,7 @@ import java.util.stream.Collectors;
  */
 @RestController
 @RequestMapping("/game")
-@CrossOrigin(allowCredentials = "true")
+@CrossOrigin(allowCredentials = "true", origins = "localhost")
 public class GameController {
 
 	private final ChannelNameModule channelNameModule;

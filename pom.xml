@@ -48,6 +48,18 @@
             <groupId>com.pusher</groupId>
             <artifactId>pusher-http-java</artifactId>
             <version>1.3.3</version>
+            <exclusions>
+           <exclusion>
+               <groupId>org.slf4j</groupId>
+               <artifactId>slf4j-nop</artifactId>
+           </exclusion>
+       </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.5.12</version>
         </dependency>
     </dependencies>
 
